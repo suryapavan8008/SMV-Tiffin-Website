@@ -50,7 +50,7 @@ const defaultMenuItems = [
     id: "item-8",
     name: "Minapa Garelu",
     description:
-      "Soaked soya chunks fried in a pan with spices, mixed with batani (peas) gravy, and served garnished with chopped onions and coriander.",
+      "Deep-fried snack made from split black gram (urad dal)",
     image: "https://static.toiimg.com/photo/66415582.cms"
   },
   {
