@@ -5,21 +5,21 @@ const MENU_STORAGE_KEY = "smv_menu_items";
 const defaultMenuItems = [
   {
     id: "item-1",
-    name: "Pungulu",
-    description: "Golden fried bite-size snack served with chutney.",
-    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80"
+    name: "Punugulu",
+    description: "Small golden fried balls made from fermented dosa batter.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bonda.jpg"
   },
   {
     id: "item-2",
     name: "Muntha Masala",
-    description: "Street-style spicy mix with onion, masala, and crunch.",
-    image: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=80"
+    description: "Street-style mix of puffed rice, groundnuts, onion, and masala spices.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bhel_puri_chaat.jpg"
   },
   {
     id: "item-3",
     name: "Mirchi Bajji",
-    description: "Crispy chili fritters with bold Andhra taste.",
-    image: "https://images.unsplash.com/photo-1542367592-8849eb950fd8?auto=format&fit=crop&w=900&q=80"
+    description: "Large green chilli dipped in besan batter and deep fried.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Mirchi-bajji%2C%20India.jpg"
   },
   {
     id: "item-4",
@@ -30,28 +30,42 @@ const defaultMenuItems = [
   {
     id: "item-5",
     name: "Egg Burji",
-    description: "Soft scrambled egg with onion, tomato, and spices.",
-    image: "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=80"
+    description: "Scrambled egg mixed with masala spices and savory sauce.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Egg_Bhurji-India.jpg"
   },
   {
     id: "item-6",
     name: "Tomato Round Cutting Salad",
-    description: "Fresh tomato slices with lemon, salt, and masala.",
-    image: "https://images.unsplash.com/photo-1551248429-40975aa4de74?auto=format&fit=crop&w=900&q=80"
+    description: "Round tomato slices topped with masala mix, onions, and coriander.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Tomato%2C%20cucumber%2C%20onion%20salad.jpg"
   },
   {
     id: "item-7",
     name: "Boiled Egg Muntha Masala",
-    description: "Boiled egg tossed with tangy muntha masala mix.",
-    image: "https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?auto=format&fit=crop&w=900&q=80"
+    description: "Muntha masala mixture tossed with chopped boiled egg pieces.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Masala%20boiled%20eggs%20served%20in%20a%20plate.jpg"
   },
   {
     id: "item-8",
-    name: "Pani Puri",
-    description: "Crispy puris filled with spicy pani and tangy masala stuffing.",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
+    name: "Milmker",
+    description:
+      "Soaked soya chunks fried in a pan with spices, mixed with batani (peas) gravy, and served garnished with chopped onions and coriander.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Soya%20chunks%20with%20peas%20curry.jpg"
   }
 ];
+
+function normalizeMenuItems(items) {
+  const blockedNames = new Set(["pani puri", "pungulu"]);
+  const canonicalNames = new Set(defaultMenuItems.map((item) => item.name.toLowerCase()));
+
+  const customItems = items.filter((item) => {
+    if (!item || typeof item !== "object" || typeof item.name !== "string") return false;
+    const name = item.name.toLowerCase();
+    return !blockedNames.has(name) && !canonicalNames.has(name);
+  });
+
+  return [...defaultMenuItems, ...customItems];
+}
 
 function getMenuItems() {
   const saved = localStorage.getItem(MENU_STORAGE_KEY);
@@ -62,7 +76,11 @@ function getMenuItems() {
 
   try {
     const parsed = JSON.parse(saved);
-    return Array.isArray(parsed) && parsed.length ? parsed : defaultMenuItems;
+    if (!Array.isArray(parsed)) return defaultMenuItems;
+
+    const normalized = normalizeMenuItems(parsed);
+    localStorage.setItem(MENU_STORAGE_KEY, JSON.stringify(normalized));
+    return normalized;
   } catch (error) {
     console.warn("Invalid menu data in localStorage. Resetting to defaults.", error);
     localStorage.setItem(MENU_STORAGE_KEY, JSON.stringify(defaultMenuItems));
