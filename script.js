@@ -13,13 +13,13 @@ const defaultMenuItems = [
     id: "item-2",
     name: "Muntha Masala",
     description: "Street-style mix of puffed rice, groundnuts, onion, and masala spices.",
-    image: "images/muntha-masala.png"
+    image: "https://www.indianrecipeinfo.com/wp-content/uploads/2022/07/Muntha-Masala-Recipe-500x500.jpg"
   },
   {
     id: "item-3",
     name: "Mirchi Bajji",
     description: "Large green chilli dipped in besan batter and deep fried.",
-    image: "images/mirchi-bajji.png"
+    image: "https://i.ytimg.com/vi/LmPoDRt10p8/maxresdefault.jpg"
   },
   {
     id: "item-4",
@@ -50,7 +50,7 @@ const defaultMenuItems = [
     name: "Milmaker",
     description:
       "Soaked soya chunks fried in a pan with spices, mixed with batani (peas) gravy, and served garnished with chopped onions and coriander.",
-    image: "images/milmker.png"
+    image: "https://i.ytimg.com/vi/_1_KqJZXU8c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCQszis_dirLX2KMscRBWa-sAK2Nw"
   }
 ];
 
