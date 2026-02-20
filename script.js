@@ -7,7 +7,7 @@ const defaultMenuItems = [
     id: "item-1",
     name: "Punugulu",
     description: "Small golden fried balls made from fermented dosa batter.",
-    image: "images/punugulu.png"
+    image: "https://www.cartly.ca/cdn/shop/articles/20210914065814-punugulu.jpg?v=1639031504"
   },
   {
     id: "item-2",
@@ -25,29 +25,29 @@ const defaultMenuItems = [
     id: "item-4",
     name: "Bread Omelette",
     description: "Toasted bread with fluffy masala omelette filling.",
-    image: "images/bread-omelette.png"
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmPU190weYegGU-VymxkIUDrPgYvgGfFNRZL3e4xhteL9YnG6hWxgyI5hEjOyP0SiYYUPHlubrQbCg_sxDjue7PpvD70yZaprf4nLZKIbsNKNikRs6MWqR-ciGYHuUp0hqnUppvDdR3r8/s1600/bread+omelette2.jpg"
   },
   {
     id: "item-5",
     name: "Egg Burji",
     description: "Scrambled egg mixed with masala spices and savory sauce.",
-    image: "images/egg-burji.png"
+    image: "https://www.ruchifoodline.com/recipes//cdn/recipes/Egg-Bhurji-1-3.jpg"
   },
   {
     id: "item-6",
-    name: "Tomato Round Cutting Salad",
-    description: "Round tomato slices topped with masala mix, onions, and coriander.",
-    image: "images/tomato-muntha-masala.png"
+    name: "Egg Salad",
+    description: "Round egg slices topped with masala mix, onions, and coriander.",
+    image: "https://www.tastingtable.com/img/gallery/x-tips-to-make-cutting-hard-boiled-eggs-much-easier/l-intro-1698691913.jpg"
   },
   {
     id: "item-7",
-    name: "Boiled Egg Muntha Masala",
-    description: "Muntha masala mixture tossed with chopped boiled egg pieces.",
-    image: "https://images.pexels.com/photos/29670383/pexels-photo-29670383.jpeg"
+    name: "Bajji Masala",
+    description: "Muntha masala mixture tossed with spicy mirchi bajji.",
+    image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/670bb1bd9b002f1e48b0b01ca6c5292c"
   },
   {
     id: "item-8",
-    name: "Milmker",
+    name: "Milmaker",
     description:
       "Soaked soya chunks fried in a pan with spices, mixed with batani (peas) gravy, and served garnished with chopped onions and coriander.",
     image: "images/milmker.png"
