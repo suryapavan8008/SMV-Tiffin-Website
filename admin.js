@@ -1,6 +1,6 @@
 ﻿const MENU_STORAGE_KEY = "smv_menu_items";
 const ADMIN_SESSION_KEY = "smv_admin_logged_in";
-const ADMIN_PASSWORD = "smv@123"; // Change this for better security.
+const ADMIN_PASSWORD = "Surya@9498"; // Change this for better security.
 
 const loginSection = document.getElementById("loginSection");
 const adminSection = document.getElementById("adminSection");
