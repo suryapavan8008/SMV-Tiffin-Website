@@ -9,6 +9,7 @@ const defaultMenuItems = [
     description: "Small golden fried balls made from fermented dosa batter.",
     image: "https://www.cartly.ca/cdn/shop/articles/20210914065814-punugulu.jpg?v=1639031504"
   },
+  
   {
     id: "item-2",
     name: "Muntha Masala",
@@ -44,6 +45,13 @@ const defaultMenuItems = [
     name: "Bajji Masala",
     description: "Muntha masala mixture tossed with spicy mirchi bajji.",
     image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/670bb1bd9b002f1e48b0b01ca6c5292c"
+  },
+  {
+    id: "item-8",
+    name: "Minapa Garelu",
+    description:
+      "Soaked soya chunks fried in a pan with spices, mixed with batani (peas) gravy, and served garnished with chopped onions and coriander.",
+    image: "https://static.toiimg.com/photo/66415582.cms"
   },
   {
     id: "item-8",
