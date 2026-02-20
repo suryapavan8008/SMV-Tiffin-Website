@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SMV Tiffin & Masal Point - Local Indian street food in Vinukonda." />
+  <title>SMV Tiffin & Masal Point | Vinukonda</title>
+
+  <!-- Performance: preconnect for external assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" id="home">
+    <nav class="navbar container">
+      <a href="#home" class="logo">SMV Tiffin & Masal Point</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container reveal">
+        <p class="tagline">Vinukonda's Evening Street Food Spot</p>
+        <h1>Fresh, Spicy, and Tasty Every Evening</h1>
+        <p>
+          Enjoy hot tiffins and masala specials at <strong>SMV Tiffin & Masal Point</strong>.
+          Open daily from 4:30 PM to 10:00 PM.
+        </p>
+        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="about section container reveal">
+      <h2>About Us</h2>
+      <p>
+        SMV Tiffin & Masal Point is a local favorite in Vinukonda, Andhra Pradesh.
+        We serve street-style evening snacks made fresh with authentic flavors.
+        Visit with friends and family for crispy, spicy, and satisfying bites.
+      </p>
+      <div class="about-meta">
+        <div>
+          <h3>Location</h3>
+          <p>Vinukonda, Andhra Pradesh, India</p>
+        </div>
+        <div>
+          <h3>Opening Hours</h3>
+          <p>4:30 PM – 10:00 PM</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu section">
+      <div class="container">
+        <h2 class="reveal">Our Menu</h2>
+        <p class="menu-subtitle reveal">Freshly prepared local street food favorites</p>
+        <div class="menu-grid" id="menuGrid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section container reveal">
+      <h2>Contact Us</h2>
+      <p>Call or message us on WhatsApp for quick updates and directions.</p>
+      <a class="btn btn-whatsapp" href="https://wa.me/918008383585" target="_blank" rel="noopener noreferrer">
+        Chat on WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content"><p>&copy; <span id="year"></span> SMV Tiffin & Masal Point. All rights reserved.</p>
+      <p><a href="admin.html">Admin Panel</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
