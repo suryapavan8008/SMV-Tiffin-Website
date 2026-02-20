@@ -44,6 +44,12 @@ const defaultMenuItems = [
     name: "Boiled Egg Muntha Masala",
     description: "Boiled egg tossed with tangy muntha masala mix.",
     image: "https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    id: "item-8",
+    name: "Pani Puri",
+    description: "Crispy puris filled with spicy pani and tangy masala stuffing.",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
   }
 ];
 
