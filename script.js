@@ -7,37 +7,37 @@ const defaultMenuItems = [
     id: "item-1",
     name: "Punugulu",
     description: "Small golden fried balls made from fermented dosa batter.",
-    image: "https://images.pexels.com/photos/13741166/pexels-photo-13741166.jpeg"
+    image: "images/punugulu.png"
   },
   {
     id: "item-2",
     name: "Muntha Masala",
     description: "Street-style mix of puffed rice, groundnuts, onion, and masala spices.",
-    image: "https://images.pexels.com/photos/35213277/pexels-photo-35213277.jpeg"
+    image: "images/muntha-masala.png"
   },
   {
     id: "item-3",
     name: "Mirchi Bajji",
     description: "Large green chilli dipped in besan batter and deep fried.",
-    image: "https://images.pexels.com/photos/33430563/pexels-photo-33430563.jpeg"
+    image: "images/mirchi-bajji.png"
   },
   {
     id: "item-4",
     name: "Bread Omelette",
     description: "Toasted bread with fluffy masala omelette filling.",
-    image: "https://images.pexels.com/photos/27396342/pexels-photo-27396342.jpeg"
+    image: "images/bread-omelette.png"
   },
   {
     id: "item-5",
     name: "Egg Burji",
     description: "Scrambled egg mixed with masala spices and savory sauce.",
-    image: "https://images.pexels.com/photos/25406262/pexels-photo-25406262.jpeg"
+    image: "images/egg-burji.png"
   },
   {
     id: "item-6",
     name: "Tomato Round Cutting Salad",
     description: "Round tomato slices topped with masala mix, onions, and coriander.",
-    image: "https://images.pexels.com/photos/1639555/pexels-photo-1639555.jpeg"
+    image: "images/tomato-muntha-masala.png"
   },
   {
     id: "item-7",
@@ -50,7 +50,7 @@ const defaultMenuItems = [
     name: "Milmker",
     description:
       "Soaked soya chunks fried in a pan with spices, mixed with batani (peas) gravy, and served garnished with chopped onions and coriander.",
-    image: "https://images.pexels.com/photos/29658378/pexels-photo-29658378.jpeg"
+    image: "images/milmker.png"
   }
 ];
 

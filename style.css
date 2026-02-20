@@ -255,8 +255,9 @@ h2 {
 
 .menu-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 220px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .menu-card-content {
